@@ -22,13 +22,28 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('welcome home'),
-        centerTitle: true,
-      ),
-      body: const Center(
-        child: Text('hello world'),
+    return const Scaffold(
+      backgroundColor: Colors.blue,
+      // appBar: AppBar(
+      //   title: const Text('welcome home'),
+      //   centerTitle: true,
+      // ),
+      body: Center(
+        child: Column(
+          children: [
+            SizedBox(
+              height: 50.0,
+            ),
+            Text(
+              'hello world',
+              style: TextStyle(
+                color: Colors.red,
+                fontSize: 55,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
